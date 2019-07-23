@@ -152,3 +152,53 @@ if (age<13){
     console.log(firstName + ' is a man.');
 }
 
+// AND (&&) => true if ALL are true
+// OR (||) => true if ONE is true
+// NOT (!) => invert true/ false value
+
+/*****************************
+* The Ternary Operator and Switch Statements
+*/
+
+let firstName = 'John'
+let age = 16;
+
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.')
+
+//It can be written like below (ternary operator)
+
+let drink = age >= 18 ? 'beer':'juice';
+console.log(drink)
+
+// or can be written like that!!
+
+if (age >= 18) {
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
+
+//Switch Statement
+let firstName = 'John'
+let job = 'developer';
+switch (job){
+    case 'teacher':
+        console.log(firstName +  'teach kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drive for Uber.');
+        break;
+    case 'designer':
+        console.log(firstName + ' design websites.');
+        break;
+    default:
+        console.log(firstName + ' has no job at the moment.');
+}
+
+
+
+
+
+
+
+
