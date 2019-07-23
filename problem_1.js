@@ -19,8 +19,8 @@
 
 function sumOfMultiple(limit){
     let i, sum = 0;
-    for (i = 3; i < limit; i += 1){
-        if (i % 3===0 || i % 5===){
+    for (i = 0; i < limit; i += 1){
+        if (i % 3===0 || i % 5===0) {
             sum += i;
         }
     }
