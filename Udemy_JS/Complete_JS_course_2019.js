@@ -113,14 +113,42 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 */
 
 let massMark = 80 //kg
-let heighMark = 1.80 //meters
+let heightMark = 1.80 //meters
 
-let massJohn = 90, heighJohn = 1.95;
-let bmiMark = massMark/heighMark^2;
-let bmiJohn = massJohn/heighJohn^2;
+let massJohn = 90, heightJohn = 1.95;
+
+let bmiMark = massMark/heightMark^2;
+let bmiJohn = massJohn/heightJohn^2;
+
 if (bmiJohn > bmiMark){
     console.log('Bmi John is bigger than Bmi Mark')
 }
 else console.log('Bmi Mark is bigger than John')
 //####################################################################
+
+//if / else statements
+
+let firstName = 'John';
+let civilStatus = 'single';
+
+if (civilStatus === 'married'){
+    console.log(firstName + " is married");
+} else {
+    console.log(firstName + " will hopefully marry soon");
+}
+
+// boolean logic
+
+let firstName = 'John';
+let age = 16;
+
+if (age<13){
+    console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) {
+    console.log(firstName + ' is a teenager.');
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man.');
+} else {
+    console.log(firstName + ' is a man.');
+}
 
