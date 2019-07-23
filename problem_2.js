@@ -3,3 +3,21 @@
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+
+function sumOfEvens(limit){
+    let temp;
+    let a = 0;
+    let b = 1 ;
+    let sum = 0;
+
+    while (b < limit){
+        temp = a
+        a = b
+        b += temp;
+        if (b % 2===0){
+        sum += b;
+        }
+    }
+    return sum;
+}
+console.log(sumOfEvens(4e6))
