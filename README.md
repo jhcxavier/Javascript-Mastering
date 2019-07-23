@@ -1,7 +1,12 @@
+Hello World!!
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git)
+My intention with this repository is just explore functionalities of JavaScript and go deeper in this programming Lenguage.
 
-Run the server using the following command:
+There are some folders with some topics:
 
-$ python3 -m http.server 3000
+LinkedIn -> goes with some specificities of the Lenguage.
+
+Project Euler -> Series of problems to be solved with algorithms. projecteuler.net
+
+Udemy_JS -> Courses provided by Senior Developers with the latest features of JavaScript
 
