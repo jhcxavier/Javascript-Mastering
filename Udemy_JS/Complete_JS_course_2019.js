@@ -258,3 +258,4 @@ switch(true){
         console.log('draw')
         break;
 }
+//Here would be Functions, however in the folder LinkdIn there's a file called Functions that I dedicated exclusively for this topic!!
