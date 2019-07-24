@@ -129,3 +129,32 @@ firstCat.speak('Meow')
    -All objects inherit properties
    -Declaretions inherit from Function
    -Function constructor inherits from object
+   /*_________________________________________________________
+   Invoking Functions through Call & Apply
+   -That's interesting!!! Check it out below!!
+
+   This technich is sometimes knows as  *Indirect invocation this because
+   allows you to execute a function in a different way and that gives you a little better
+   control over the 'this' argument. You can also define value of the 'this' argument.
+   But remember that the 'this' paramater is bound to the global object, that means that
+   can easily get control by another function or method.*/
+
+   let speak = function(what){
+       console.log(what);
+       console.log(this);       //window object (not useful)
+   }
+   speak('moof');
+/* Call passes a value and Apply an Array*/
+
+let speak = function(what){
+       //console.log(what);
+       console.log(this.love);
+       //console.log(this.normal);
+
+   }
+   let saySomething = {normal: 'meow', love: "purr"}
+   speak.call(saySomething);        // here I;m taking the variable and passing through the speak method as 'this' paramater.
+   //speak('moof');
+   /*Refreshing in the brownser it should be able to see 'purr'
+   -We were able to passa the variable saySomething inside the function using 'this' paramater.
+   uncommenting the second dot log we should get also 'meow'.
