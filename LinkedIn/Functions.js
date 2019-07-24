@@ -93,4 +93,39 @@ secondDog.name = 'Fluffy';
 secondDog.breed = 'Poodle'
 //this argument point to the instace of the object
 // Convention says that Constructor names should be capitalized
-// Good way of letting know that this function creates objects
+// Good way of letting know that this function creates
+//_______________________________________________________
+
+/*Expanding objects through prototype
+    - Prototypal Inheritance
+    - Every object can be based on another
+    - prototype object gives you access */
+let speak = function(saywhat){
+    console.log(saywhat)
+}
+
+let Dog = function(){
+    let name, breed;
+}
+
+let Cat = function(){
+    let name, breed;
+}
+
+Dog.prototype.speak = speak;
+Cat.prototype.speak = speak;
+
+firstDog = new Dog;
+firstDog.name = 'Rover';
+firstDog.breed = 'Doberman'
+firstDog.speak('WOOF')
+
+firstCat = new Cat;
+firstCat.name = 'Garfield';
+firstCat.breed = 'Manx'
+firstCat.speak('Meow')
+
+/* -Multiples objects can Inheritance
+   -All objects inherit properties
+   -Declaretions inherit from Function
+   -Function constructor inherits from object
