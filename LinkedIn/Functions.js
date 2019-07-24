@@ -157,4 +157,17 @@ let speak = function(what){
    //speak('moof');
    /*Refreshing in the brownser it should be able to see 'purr'
    -We were able to passa the variable saySomething inside the function using 'this' paramater.
-   uncommenting the second dot log we should get also 'meow'.
+   uncommenting the second dot log we should get also 'meow'*/
+
+//ARGUMENTS
+/* Define the variable sum inside of the function does not interfere with the sum
+defined outside the function. The functions only sees the inner one.*/
+
+let plus = function(){
+    let i, sum = 0;
+    for (i = arguments.length - 1; i >= 0; i--){
+        sum += arguments[i];
+    }
+    return sum;
+}
+console.log(plus(2 ,2 , 2))
