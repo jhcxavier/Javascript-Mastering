@@ -170,4 +170,5 @@ let plus = function(){
     }
     return sum;
 }
-console.log(plus(2 ,2 , 2))
+console.log(plus(2 ,2 ,2))
+

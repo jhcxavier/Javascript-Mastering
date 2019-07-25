@@ -258,4 +258,85 @@ switch(true){
         console.log('draw')
         break;
 }
-//Here would be Functions, however in the folder LinkdIn there's a file called Functions.js that I dedicated exclusively for this topic!!
+//FUNCTIONS
+
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
+calculateAge(1990);
+
+let ageJohn = calculateAge(1990);
+let ageMike   = calculateAge(1948);
+let ageJane = calculateAge(1969);
+console.log(ageJohn, ageMike, ageJane)
+
+
+function yearsUntilRetirement(year, firstName){
+    let age = calculateAge(year)
+    let retirement = 65 - age;
+    if(retirement > 0){
+    console.log(firstName + ' retires in '+ retirement+' years');
+    }else{
+        console.log(firstName+" is already retired.")
+    }
+}
+yearsUntilRetirement(1990, 'John')
+yearsUntilRetirement(1948, 'Mike')
+yearsUntilRetirement(1969, 'Jane')
+
+/*****************************
+* Function Statements and Expressions
+*/
+
+// Function declaration
+//function whatDoYouDo(job, firstName){}
+
+let whatDoYouDo = function(job, firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+        case 'driver':
+            return firstName + ' drives a cab in Miami';
+        case 'designer':
+            return firstName + ' design beatuful websites';
+        default:
+            return firstName + ' does something else';
+    }
+}
+console.log(whatDoYouDo('driver', 'John'))
+console.log(whatDoYouDo('designer', 'Maria'))
+console.log(whatDoYouDo('teacher', 'Mike'))
+console.log(whatDoYouDo('policeman', 'John'))
+
+/*****************************
+* Arrays
+*/
+
+// Initialize new array
+
+let names =['John', 'Mark', 'Jane'];
+let years = new Array(1990, 1969, 1948);
+
+console.log(names.length);
+
+//Mutate array data
+
+names[1] = 'Ben'
+names[names.length] = 'Mary'
+console.log(names)
+
+// Different data types
+
+let john = ['John', "Smith", 1990, 'teacher', false];
+
+john.push('blue'); // add an element to the end of the array
+john.unshift('Mr.') // add an element at the beginin of the array
+john.pop()  //remove an element from the end of the array!
+john.shift() //remove an element from the begining of the array
+console.log(john.indexOf(1990)) // tells which position in the array is the element!!
+console.log(john)
+
+let isDesigner = john.indexOf('teacher') === 3 ? 'John is a teacher' : 'Is not a teacher';
+console.log(isDesigner)
+
+
