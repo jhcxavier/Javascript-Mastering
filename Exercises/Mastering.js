@@ -68,18 +68,47 @@ console.log(isOldEnoughToVote(22))
 
 function checkAge(name, age) {
 
-// let name = 'Adrian'
-// let age = 22
-
   switch(true){
     case age < 21:
       return "Go home, "+name+"!"
 
     case age >= 21:
       return "Welcome, "+name+"!"
-
-
   }
-
 }
 console.log(checkAge('Adrian', '22'))
+
+//------------------------------------------------------------
+// Write a function called "getFullName".
+
+// Given a first and a last name, "getFullName" returns a single string with the given first and last names separated by a single space.
+
+// var output = getFullName('Joe', 'Smith');
+// console.log(output); // --> 'Joe Smith'
+
+function getFullName(firstName, lastName) {
+
+  return firstName +' '+ lastName;
+}
+console.log(getFullName('Joe', 'Smith'))
+//===========================================================
+// Write a function called "getLengthOfWord".
+
+// Given a word, "getLengthOfWord" returns the length of the given word.
+
+// var output = getLengthOfWord('some');
+// console.log(output); // --> 4
+
+function getLengthOfWord(word) {
+
+  return word.length;
+}
+console.log(getLengthOfWord('some'))
+
+
+
+
+
+
+
+
