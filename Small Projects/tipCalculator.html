@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+</head>
+<script>
+   function tipCalculate(slider, bill){
+        let tip = document.querySelector('#tip');
+        let slideval = document.querySelector('#slideval');
+        bill = document.querySelector('#bill').value;
+        let prctg = slider * 0.01;
+        slideval.innerHTML = slider +'%';
+        tip.innerHTML = '$'+(bill * prctg).toFixed(2)
+    }
+</script>
+<body>
+<h2>Tip Calculator</h2>
+Enter the bill amount: $
+<input type='text' id='bill'><br>
+Tip percentage:
+<input type='range' min='0' max='100' value='0' step='1' onchange="tipCalculate(this.value, 'bill')">
+<span id='slideval'>0%</span><br>
+Tip to leave = <span id='tip'></span><br>
+
+</body>
+</html>
