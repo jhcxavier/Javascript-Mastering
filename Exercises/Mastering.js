@@ -106,8 +106,51 @@ function getLengthOfWord(word) {
 console.log(getLengthOfWord('some'))
 
 
+//==========================================================
+//  Write a function called "getLengthOfTwoWords".
 
+// Given 2 words, "getLengthOfTwoWords" returns the sum of their lengths.
 
+// var output = getLengthOfTwoWords('some', 'words');
+// console.log(output); // --> 9
+
+function getLengthOfTwoWords(word1, word2) {
+
+  return word1.length + word2.length;
+}
+console.log(getLengthOfTwoWords('some', 'words'))
+
+//===============================================================
+// Write a function called "isGreaterThanTen".
+
+// Given a number, "isGreaterThanTen" returns whether it is greater than 10.
+
+// var output = isGreaterThanTen(11);
+// console.log(output); // --> true
+function isGreaterThanTen(num) {
+
+  if(num > 10){
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(isGreaterThanTen(11))
+//=========================================================
+//  Write a function called "isLessThan30".
+
+// Given a number, "isLessThan30" returns whether the given number is less than 30.
+
+// var output = isLessThan30(9);
+// console.log(output); // --> true
+function isLessThan30(num) {
+  // your code here
+  if(num < 30){
+    return true;
+  }else {
+    return false;
+  }
+}console.log(isLessThan30(9))
 
 
 
