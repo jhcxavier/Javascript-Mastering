@@ -183,5 +183,62 @@ function isLessThan(num1, num2) {
   }
 }
 console.log(isLessThan(9,4))
+//==================================================================
+//  Write a function called "isGreaterThan".
 
+// Given 2 numbers, "isGreaterThan" returns whether num2 is greater than num1.
 
+// var output = isGreaterThan(11, 10);
+// console.log(output); // --> false
+function isGreaterThan(num1, num2) {
+  if(num2 > num1){
+    return true;
+  }else{
+    return false;
+  }
+}console.log(isGreaterThan(9,10))
+//===================================================
+//  Write a function called "isEqualTo".
+
+// Given 2 numbers, "isEqualTo" returns whether num2 is equal to num1.
+
+// var output = isEqualTo(11, 10);
+// console.log(output); // --> false
+function isEqualTo(num1, num2) {
+  if(num1 == num2){
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(isEqualTo(11,10))
+//=====================================================
+//  Write a function called "isEven".
+
+// Given a number, "isEven" returns whether it is even.
+
+// var output = isEven(11);
+// console.log(output); // --> false
+function isEven(num) {
+  if (num % 2 === 0){
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(isEven(11))
+//======================================================
+//  Write a function called "isOdd".
+
+// Given a number, "isOdd" returns whether the given number is odd.
+
+// var output = isOdd(9);
+// console.log(output); // --> true
+function isOdd(num) {
+  if (num % 2 !== 0){
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(isOdd(10))
