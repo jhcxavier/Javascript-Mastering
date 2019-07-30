@@ -144,7 +144,6 @@ console.log(isGreaterThanTen(11))
 // var output = isLessThan30(9);
 // console.log(output); // --> true
 function isLessThan30(num) {
-  // your code here
   if(num < 30){
     return true;
   }else {
@@ -152,6 +151,37 @@ function isLessThan30(num) {
   }
 }console.log(isLessThan30(9))
 
+//============================================================
+//  Write a function called "equalsTen".
 
+// Given a number, "equalsTen" returns whether or not the given number is 10.
+
+// var output = equalsTen(9);
+// console.log(output); // --> false
+
+function equalsTen(num) {
+  if(num == 10){
+    return true;
+  }else {
+    return false;
+  }
+
+}
+console.log(equalsTen(9))
+//==============================================================
+//  Write a function called "isLessThan".
+
+// Given 2 numbers, "isLessThan" returns whether num2 is less than num1.
+
+// var output = isLessThan(9, 4);
+// console.log(output); // --> true
+function isLessThan(num1, num2) {
+  if (num2 < num1){
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(isLessThan(9,4))
 
 
