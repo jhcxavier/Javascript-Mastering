@@ -257,3 +257,49 @@ var countSheep = function (num){
   return sum;
 }
 countSheep(5);
+
+//---------------------------------------------------------------------------------------
+
+// Write a function called "isSameLength".
+
+// Given two words, "isSameLength" returns whether the given words have the same length.
+
+// var output = isSameLength('words', 'super');
+// console.log(output); // --> true
+
+function isSameLength(word1, word2) {
+    // your code here
+    if (word1.length === word2.length){
+      return true;
+    }else{
+      return false;
+    }
+}
+console.log(isSameLength('words','super'))
+//------------------------------------------------------------------------------------------
+//  Write a function called "areBothOdd".
+
+// Given 2 numbers, "areBothOdd" returns whether or not both of the given numbers are odd.
+
+// var output = areBothOdd(1, 3);
+// console.log(output); // --> true
+
+function areBothOdd(num1, num2) {
+  // your code here
+  if(num1 % 2 !== 0 && num2 % 2 !== 0){
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(areBothOdd(1, 2))
+
+
+
+
+
+
+
+
+
+
