@@ -268,7 +268,7 @@ countSheep(5);
 // console.log(output); // --> true
 
 function isSameLength(word1, word2) {
-    // your code here
+
     if (word1.length === word2.length){
       return true;
     }else{
@@ -285,7 +285,7 @@ console.log(isSameLength('words','super'))
 // console.log(output); // --> true
 
 function areBothOdd(num1, num2) {
-  // your code here
+
   if(num1 % 2 !== 0 && num2 % 2 !== 0){
     return true;
   }else {
@@ -294,8 +294,29 @@ function areBothOdd(num1, num2) {
 }
 console.log(areBothOdd(1, 2))
 
+//-------------------------------------------------------------------------------------------
+// Write a function called "isEitherEven".
 
+// Given two numbers, "isEitherEven" returns whether or not either one of the given numbers is even.
 
+// var output = isEitherEven(1, 4);
+// console.log(output); // --> true
+
+function isEitherEven(num1, num2) {
+
+  if(num1 % 2 !== 0 && num2 % 2 === 0){
+  return true;
+
+  }
+  else if(num1 % 2 !== 0 && num2 % 2 !==0){
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+console.log(isEitherEven(1, 5))
+//-----------------------------------------------------------------------------------------------
 
 
 
