@@ -326,7 +326,7 @@ console.log(isEitherEven(1, 5))
 // var output = isOddLength('special');
 // console.log(output); // --> true
 function isOddLength(word) {
-  // your code here
+
   if (word.length % 2 !== 0){
     return true
   }else {
@@ -343,7 +343,7 @@ console.log(isOddLength('special'))
 // var output = isEvenLength('wow');
 // console.log(output); // --> false
 function isEvenLength(word) {
-  // your code here
+
   if(word.length % 2 ==0){
     return true;
   }else {
@@ -360,7 +360,7 @@ console.log(isEvenLength('wow'))
 // var output = isEvenAndGreaterThanTen(13);
 // console.log(output); // --> false
 function isEvenAndGreaterThanTen(num) {
-  // your code here
+
   if(num > 10 && num % 2 === 0){
     return true;
   }else{
@@ -369,4 +369,16 @@ function isEvenAndGreaterThanTen(num) {
 }
 console.log(isEvenAndGreaterThanTen(13))
 
+//__________________________________________________________________-
+//  Write a function called "average".
+
+// Given two numbers, "average" returns their average.
+
+// var output = average(4, 6);
+// console.log(output); // --> 5
+function average(num1, num2) {
+
+  return (num1 + num2) / 2;
+}
+console.log(average(5, 2))
 
