@@ -390,7 +390,30 @@ console.log(average(5, 2))
 // var output = computeAreaOfATriangle(4, 6);
 // console.log(output); // --> 12
 function computeAreaOfATriangle(base, height) {
-  // your code here
+
   return (base * height) / 2
 }
 console.log(computeAreaOfATriangle(4,6))
+
+//_________________________________________________________________
+// Write a function called "cube".
+
+// Given a number, "cube" returns the cube of that number.
+
+// var output = cube(3);
+// console.log(output); // --> 27
+
+function cube(num) {
+  return num*num*num;
+}
+console.log(cube(3))
+
+
+
+
+
+
+
+
+
+
