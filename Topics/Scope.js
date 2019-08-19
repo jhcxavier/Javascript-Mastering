@@ -33,3 +33,11 @@ console.log(warrior, warrior3)
 
 // var warrior3;//will show undefined
 
+let warriors4 = ['ninja', 'samurai', 'viking'];
+
+const callWarrior = () => {
+
+    return  console.log(warriors4);
+}
+callWarrior();
+
