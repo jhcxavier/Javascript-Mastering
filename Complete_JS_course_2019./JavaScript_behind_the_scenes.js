@@ -39,4 +39,44 @@ foo();
 console.log(age);
 
 
+/////////////////////////////////////
+// Lecture: Scoping
+
+//Scoping and the Scope Chain
+
+// Each new function creates a scope: the space/ environment, in which the Variables
+// it defines are accessible.
+
+//Lexical scoping: a function that is lexically within another function get access to the sope of the outer function.
+
+
+// First scoping example
+
+var a = 'Hello!';
+first();
+function first() {
+    var b = 'Hi!';
+    second();
+    function second() {
+        var c = 'Hey!';
+        console.log(a + b + c);
+    }
+}
+
+// Example to show the differece between execution stack and scope chain
+var a = 'Hello!';
+first();
+function first() {
+    var b = 'Hi!';
+    second();
+    function second() {
+        var c = 'Hey!';
+        third()
+    }
+}
+function third() {
+    var d = 'John';
+    //console.log(c);
+    console.log(a+d);
+}
 
