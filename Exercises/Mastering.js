@@ -7,11 +7,11 @@
 
 function isOldEnoughToDrink(age) {
 
-  if (age < 21){
-    return false
-  }else {
-    return true;
-  }
+    if (age < 21) {
+        return false
+    } else {
+        return true;
+    }
 
 }
 console.log(isOldEnoughToDrink(22))
@@ -28,11 +28,11 @@ console.log(isOldEnoughToDrink(22))
 
 function isOldEnoughToDrive(age) {
 
-  if(age < 16){
-    return false
-  }else {
-    return true;
-  }
+    if (age < 16) {
+        return false
+    } else {
+        return true;
+    }
 }
 console.log(isOldEnoughToDrive(22))
 // //------------------------------------------------------------------------------
@@ -46,11 +46,11 @@ console.log(isOldEnoughToDrive(22))
 // console.log(output); // --> true
 function isOldEnoughToVote(age) {
 
-  if(age < 18){
-    return false
-  }else{
-    return true
-  }
+    if (age < 18) {
+        return false
+    } else {
+        return true
+    }
 }
 console.log(isOldEnoughToVote(22))
 //------------------------------------------------------------------------------
@@ -68,13 +68,13 @@ console.log(isOldEnoughToVote(22))
 
 function checkAge(name, age) {
 
-  switch(true){
-    case age < 21:
-      return "Go home, "+name+"!"
+    switch (true) {
+        case age < 21:
+            return "Go home, " + name + "!"
 
-    case age >= 21:
-      return "Welcome, "+name+"!"
-  }
+        case age >= 21:
+            return "Welcome, " + name + "!"
+    }
 }
 console.log(checkAge('Adrian', '22'))
 
@@ -88,7 +88,7 @@ console.log(checkAge('Adrian', '22'))
 
 function getFullName(firstName, lastName) {
 
-  return firstName +' '+ lastName;
+    return firstName + ' ' + lastName;
 }
 console.log(getFullName('Joe', 'Smith'))
 //===========================================================
@@ -101,7 +101,7 @@ console.log(getFullName('Joe', 'Smith'))
 
 function getLengthOfWord(word) {
 
-  return word.length;
+    return word.length;
 }
 console.log(getLengthOfWord('some'))
 
@@ -116,7 +116,7 @@ console.log(getLengthOfWord('some'))
 
 function getLengthOfTwoWords(word1, word2) {
 
-  return word1.length + word2.length;
+    return word1.length + word2.length;
 }
 console.log(getLengthOfTwoWords('some', 'words'))
 
@@ -129,11 +129,11 @@ console.log(getLengthOfTwoWords('some', 'words'))
 // console.log(output); // --> true
 function isGreaterThanTen(num) {
 
-  if(num > 10){
-    return true;
-  }else {
-    return false;
-  }
+    if (num > 10) {
+        return true;
+    } else {
+        return false;
+    }
 }
 console.log(isGreaterThanTen(11))
 //=========================================================
@@ -144,12 +144,12 @@ console.log(isGreaterThanTen(11))
 // var output = isLessThan30(9);
 // console.log(output); // --> true
 function isLessThan30(num) {
-  if(num < 30){
-    return true;
-  }else {
-    return false;
-  }
-}console.log(isLessThan30(9))
+    if (num < 30) {
+        return true;
+    } else {
+        return false;
+    }
+} console.log(isLessThan30(9))
 
 //============================================================
 //  Write a function called "equalsTen".
@@ -160,11 +160,11 @@ function isLessThan30(num) {
 // console.log(output); // --> false
 
 function equalsTen(num) {
-  if(num == 10){
-    return true;
-  }else {
-    return false;
-  }
+    if (num == 10) {
+        return true;
+    } else {
+        return false;
+    }
 
 }
 console.log(equalsTen(9))
@@ -176,13 +176,13 @@ console.log(equalsTen(9))
 // var output = isLessThan(9, 4);
 // console.log(output); // --> true
 function isLessThan(num1, num2) {
-  if (num2 < num1){
-    return true;
-  }else {
-    return false;
-  }
+    if (num2 < num1) {
+        return true;
+    } else {
+        return false;
+    }
 }
-console.log(isLessThan(9,4))
+console.log(isLessThan(9, 4))
 //==================================================================
 //  Write a function called "isGreaterThan".
 
@@ -191,12 +191,12 @@ console.log(isLessThan(9,4))
 // var output = isGreaterThan(11, 10);
 // console.log(output); // --> false
 function isGreaterThan(num1, num2) {
-  if(num2 > num1){
-    return true;
-  }else{
-    return false;
-  }
-}console.log(isGreaterThan(9,10))
+    if (num2 > num1) {
+        return true;
+    } else {
+        return false;
+    }
+} console.log(isGreaterThan(9, 10))
 //===================================================
 //  Write a function called "isEqualTo".
 
@@ -205,13 +205,13 @@ function isGreaterThan(num1, num2) {
 // var output = isEqualTo(11, 10);
 // console.log(output); // --> false
 function isEqualTo(num1, num2) {
-  if(num1 == num2){
-    return true;
-  }else {
-    return false;
-  }
+    if (num1 == num2) {
+        return true;
+    } else {
+        return false;
+    }
 }
-console.log(isEqualTo(11,10))
+console.log(isEqualTo(11, 10))
 //=====================================================
 //  Write a function called "isEven".
 
@@ -220,11 +220,11 @@ console.log(isEqualTo(11,10))
 // var output = isEven(11);
 // console.log(output); // --> false
 function isEven(num) {
-  if (num % 2 === 0){
-    return true;
-  }else {
-    return false;
-  }
+    if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 console.log(isEven(11))
 //======================================================
@@ -235,11 +235,11 @@ console.log(isEven(11))
 // var output = isOdd(9);
 // console.log(output); // --> true
 function isOdd(num) {
-  if (num % 2 !== 0){
-    return true;
-  }else {
-    return false;
-  }
+    if (num % 2 !== 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 console.log(isOdd(10))
 
@@ -249,12 +249,12 @@ console.log(isOdd(10))
 
 
 
-var countSheep = function (num){
-  let sum = "";
-  for (let i = 0; i<num; i++){
-  sum = sum + (i + 1) + " sheep..."
-  }
-  return sum;
+var countSheep = function (num) {
+    let sum = "";
+    for (let i = 0; i < num; i++) {
+        sum = sum + (i + 1) + " sheep..."
+    }
+    return sum;
 }
 countSheep(5);
 
@@ -269,13 +269,13 @@ countSheep(5);
 
 function isSameLength(word1, word2) {
 
-    if (word1.length === word2.length){
-      return true;
-    }else{
-      return false;
+    if (word1.length === word2.length) {
+        return true;
+    } else {
+        return false;
     }
 }
-console.log(isSameLength('words','super'))
+console.log(isSameLength('words', 'super'))
 //------------------------------------------------------------------------------------------
 //  Write a function called "areBothOdd".
 
@@ -286,11 +286,11 @@ console.log(isSameLength('words','super'))
 
 function areBothOdd(num1, num2) {
 
-  if(num1 % 2 !== 0 && num2 % 2 !== 0){
-    return true;
-  }else {
-    return false;
-  }
+    if (num1 % 2 !== 0 && num2 % 2 !== 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 console.log(areBothOdd(1, 2))
 
@@ -304,16 +304,16 @@ console.log(areBothOdd(1, 2))
 
 function isEitherEven(num1, num2) {
 
-  if(num1 % 2 !== 0 && num2 % 2 === 0){
-  return true;
+    if (num1 % 2 !== 0 && num2 % 2 === 0) {
+        return true;
 
-  }
-  else if(num1 % 2 !== 0 && num2 % 2 !==0){
-    return false;
-  }
-  else {
-    return true;
-  }
+    }
+    else if (num1 % 2 !== 0 && num2 % 2 !== 0) {
+        return false;
+    }
+    else {
+        return true;
+    }
 }
 console.log(isEitherEven(1, 5))
 //-----------------------------------------------------------------------------------------------
@@ -327,11 +327,11 @@ console.log(isEitherEven(1, 5))
 // console.log(output); // --> true
 function isOddLength(word) {
 
-  if (word.length % 2 !== 0){
-    return true
-  }else {
-    return false;
-  }
+    if (word.length % 2 !== 0) {
+        return true
+    } else {
+        return false;
+    }
 
 }
 console.log(isOddLength('special'))
@@ -344,11 +344,11 @@ console.log(isOddLength('special'))
 // console.log(output); // --> false
 function isEvenLength(word) {
 
-  if(word.length % 2 ==0){
-    return true;
-  }else {
-    return false;
-  }
+    if (word.length % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 console.log(isEvenLength('wow'))
 
@@ -361,11 +361,11 @@ console.log(isEvenLength('wow'))
 // console.log(output); // --> false
 function isEvenAndGreaterThanTen(num) {
 
-  if(num > 10 && num % 2 === 0){
-    return true;
-  }else{
-    return false;
-  }
+    if (num > 10 && num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 console.log(isEvenAndGreaterThanTen(13))
 
@@ -378,7 +378,7 @@ console.log(isEvenAndGreaterThanTen(13))
 // console.log(output); // --> 5
 function average(num1, num2) {
 
-  return (num1 + num2) / 2;
+    return (num1 + num2) / 2;
 }
 console.log(average(5, 2))
 
@@ -391,9 +391,9 @@ console.log(average(5, 2))
 // console.log(output); // --> 12
 function computeAreaOfATriangle(base, height) {
 
-  return (base * height) / 2
+    return (base * height) / 2
 }
-console.log(computeAreaOfATriangle(4,6))
+console.log(computeAreaOfATriangle(4, 6))
 
 //_________________________________________________________________
 // Write a function called "cube".
@@ -404,7 +404,7 @@ console.log(computeAreaOfATriangle(4,6))
 // console.log(output); // --> 27
 
 function cube(num) {
-  return num*num*num;
+    return num * num * num;
 }
 console.log(cube(3))
 //------------------------------------------________----------------
@@ -415,8 +415,8 @@ console.log(cube(3))
 // var output = square(5);
 // console.log(output); // --> 25
 function square(num) {
-  // your code here
-  return num*num;
+    // your code here
+    return num * num;
 }
 console.log(square(5))
 //_________________________________________________
@@ -429,7 +429,7 @@ console.log(square(5))
 // console.log(output); // --> 6
 function computeAverageLengthOfWords(word1, word2) {
 
-  return (word1.length + word2.length)/2
+    return (word1.length + word2.length) / 2
 }
 console.log(computeAverageLengthOfWords('code', 'programs'))
 _______________________________________________
@@ -446,8 +446,28 @@ _______________________________________________
 // console.log(person.fullName); // --> 'Jade Smith'
 
 function addFullNameProperty(obj) {
-  
-  obj.fullName = obj.firstName + " " + obj.lastName;
+
+    obj.fullName = obj.firstName + " " + obj.lastName;
 }
 
+// This next exercise I was trying to rotate an array. 
+// It can be found in codelity
+let arr = [1, 2, 3, 4];
+// let arr = [3, 8, 9, 7, 6];
 
+let rotate = (a, k) => {
+    const min = 0;
+    const max = 100;
+    if (k >= min && k <= 100) {
+        console.log(k)
+        for (let i = 1; i <= k; i++) {
+            let firstIndex = arr[0]
+            //     repo.push(firstIndex)
+            arr.shift()
+            console.log(arr)
+            arr.push(firstIndex)
+            console.log(arr)
+        }
+    }
+}
+rotate(arr, 99)
