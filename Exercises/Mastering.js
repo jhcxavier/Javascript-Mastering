@@ -471,3 +471,55 @@ let rotate = (a, k) => {
     }
 }
 rotate(arr, 99)
+//----------------------------------------------------------------------------
+// Merge 2 Arrays
+
+// You will be completing a merge sort. You will be given two arrays of
+// intergers (arrays will be individually presorted). You will create a 
+// function that takes in two arrays as parameters and returns an array 
+// with the values from the array sorted from lowest to greatest.
+
+// As an example consider the arrays a = [1,2,3] and b = [2,5,5]
+// a[0] < b[0] -> c = [a[0]] = [1]
+// a[1] = b[0] -> c = [a[0], b[0]] = [1,2]
+// a[1] < b[1] -> c = [a[0], b[0], a[1]] = [1,2,2]
+// a[2] < b[1] -> c = [a[0], b[0], a[1], a[2]] = [1,2,2,3]
+// No more elements in a -> c = [a[0], b[0], a[1], a[2], b[1], b[2]] = [1,2,2,3,5,5]
+
+// so...
+// mergesort(a,b) ...should return... [1,2,2,3,5,5]
+
+let array1 = [1,2,3];
+let array2 = [2,5,5];
+
+// let mergeArrays=(a, b)=>{
+//   let array3=[];
+//   let test = 1000;
+//   for (let i =0 i<a.length; i++){
+//     for (let j=0; j<b.length; j++){
+//       if(a[i]< test){
+//         test = a[i]
+//         if(test <= b[j]){
+//           array3.push(test)
+//         }
+//         array3.push(test)
+//       }
+//     }
+//   }
+  
+//   console.log(array3)
+// }
+function merge(a, b) {
+  let m = [...b];
+  for (let n of a)
+    for (let i in m) {
+      if (n < m[i]) {
+        m.splice(i, 0, n);
+        break;
+      }
+      if (Number(i)+1 === m.length)
+        m.push(n); 
+    }
+  return m;
+}
+merge(array1, array2)
