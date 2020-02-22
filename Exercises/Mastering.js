@@ -489,8 +489,8 @@ rotate(arr, 99)
 // so...
 // mergesort(a,b) ...should return... [1,2,2,3,5,5]
 
-let array1 = [1,2,3];
-let array2 = [2,5,5];
+let array1 = [1, 2, 3];
+let array2 = [2, 5, 5];
 
 // let mergeArrays=(a, b)=>{
 //   let array3=[];
@@ -506,21 +506,21 @@ let array2 = [2,5,5];
 //       }
 //     }
 //   }
-  
+
 //   console.log(array3)
 // }
 function merge(a, b) {
-  let m = [...b];
-  for (let n of a)
-    for (let i in m) {
-      if (n < m[i]) {
-        m.splice(i, 0, n);
-        break;
-      }
-      if (Number(i)+1 === m.length)
-        m.push(n); 
-    }
-  return m;
+    let m = [...b];
+    for (let n of a)
+        for (let i in m) {
+            if (n < m[i]) {
+                m.splice(i, 0, n);
+                break;
+            }
+            if (Number(i) + 1 === m.length)
+                m.push(n);
+        }
+    return m;
 }
 merge(array1, array2)
 //___________________________________________________________________________
@@ -531,6 +531,24 @@ merge(array1, array2)
 // with the first name and last name separated by a space.
 function addFullNameProperty(obj) {
 
-  obj.fullName = obj.firstName + " " + obj.lastName;
+    obj.fullName = obj.firstName + " " + obj.lastName;
 }
 //___________________________________________________________________________
+//  Write a function called "isPersonOldEnoughToDrinkAndDrive".
+// Given a "person" object, that contains an "age" property, "isPersonOldEnoughToDrinkAndDrive" returns whether 
+// the given person is old enough to legally drink and drive in the United States.
+// Notes:* The legal drinking age in the United States is 21.* The legal driving age 
+// in the United States is 16.* It is always illegal to drink and drive in the United States.
+function isPersonOldEnoughToDrinkAndDrive(person) {
+    // your code here
+    if (person < 16) {
+        return false;
+    } else {
+        return false;
+    }
+}
+let person = {
+    age: 45
+};
+let output = isPersonOldEnoughToDrinkAndDrive(person)
+console.log(output)
