@@ -552,3 +552,22 @@ let person = {
 };
 let output = isPersonOldEnoughToDrinkAndDrive(person)
 console.log(output)
+//___________________________________________________________________________
+// Write a function called "isPersonOldEnoughToDrive".
+// Given a "person" object, that contains an "age" property, 
+// "isPersonOldEnoughToDrive" returns whether the given person is old enough to drive.
+// Notes:* The legal driving age in the United States is 16.
+
+function isPersonOldEnoughToDrinkAndDrive(person) {
+  // your code here
+ if (person < 16){
+   return false;
+ }else {
+   return false;
+ }
+}
+let person = {
+  age: 45
+};
+let output = isPersonOldEnoughToDrinkAndDrive(person)
+console.log(output)
