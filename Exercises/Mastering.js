@@ -571,3 +571,22 @@ let person = {
 };
 let output = isPersonOldEnoughToDrinkAndDrive(person)
 console.log(output)
+//___________________________________________________________________________
+//  Write a function called "isPersonOldEnoughToVote".
+
+// Given a "person" object, that contains an "age" property,
+//  "isPersonOldEnoughToVote" returns whether the given person is old enough to vote.
+
+// Notes:* The legal voting age in the United States is 18.
+function isPersonOldEnoughToVote(obj) {
+  // your code here
+  obj = {
+    age: 19
+  }
+  if(person.age < 18){
+    return false;
+  }else {
+    return true;
+  }
+}
+console.log(isPersonOldEnoughToVote(17))
