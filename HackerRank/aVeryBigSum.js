@@ -40,7 +40,6 @@ function aVeryBigSum(ar) {
             ar[0] = 0;
         else if(ar[i] >= 0 && ar[i] <= 10^10)
             result+=ar[i];
-        
     
     return result;
 }
