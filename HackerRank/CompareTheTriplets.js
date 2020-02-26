@@ -17,18 +17,17 @@ let a = [17, 28, 30];
 let b = [99,6,10];
 function compareTriplets(a, b) {
 
-    if(a.length !== b.length){
+    if(a.length !== b.length)
         return false;
-    }  
+    
     let scoreA = 0;
     let scoreB = 0;
     
     for (let i = 0; i<a.length; i++){
-        if(a[i] < b[i]){
+        if(a[i] < b[i])
                 scoreB++;
-        }else if(a[i] > b[i]){
+        else if(a[i] > b[i])
             scoreA++;
-        }
     }
     return [scoreA, scoreB];
 }
