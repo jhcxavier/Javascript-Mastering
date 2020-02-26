@@ -29,26 +29,19 @@ let arr = [5, 1000000001, 1000000002, 1000000003, 1000000004, 1000000005]
 function aVeryBigSum(ar) {
     const min = -2147483648;
     const max = 2147483647;
-    let arr1=[]
+    let result=0;
     let i;
 
-    if(ar[i] < min && ar[i] > max){
+    if(ar[i] < min && ar[i] > max)
         return false;
-    }
   
-    for(let i=0; i<ar.length; i++){
-        if(ar[0]>= 1 && ar[0]<=10){
+    for(let i=0; i<ar.length; i++)
+        if(ar[0]>= 1 && ar[0]<=10)
             ar[0] = 0;
-            arr1.push(ar[0])
-        }else if(ar[i] >= 0 && ar[i] <= 10^10){ 
-            arr1.push(ar[i])
-        }
-    }
-
-    let result = arr1.reduce((total, num)=>{
-        return total + num;
-    })
-  
+        else if(ar[i] >= 0 && ar[i] <= 10^10)
+            result+=ar[i];
+        
+    
     return result;
 }
 console.log(aVeryBigSum(arr))
