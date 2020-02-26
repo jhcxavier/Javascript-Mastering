@@ -19,26 +19,18 @@ function compareTriplets(a, b) {
     if(a.length !== b.length){
         return false;
     }  
-    let arrA = [];
-    let arrB = [];
+    let scoreA = 0;
+    let scoreB = 0;
   
     for (let i = 0; i<a.length; i++){
         if(a[i] < b[i]){
-                arrB.push(1)
-            }
-            else if(a[i] > b[i]){
-                arrA.push(1)
-            }else{
-            arrA.push(0)
-            arrB.push(0)
-            }
+                scoreB++;
+        }else if(a[i] > b[i]){
+            scoreA++;
+        }
     }
-    a = arrA.reduce((total, num)=>{
-        return total + num;
-    })
-    b = arrB.reduce((total, num)=>{
-        return total + num;
-    })
+    a = scoreA;
+    b = scoreB;
     let arrC =[]
     arrC.push(a, b)
     return arrC;
