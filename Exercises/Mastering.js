@@ -635,7 +635,7 @@ function addToFront(arr, element) {
   arr.unshift(element)
   return arr
 }
-
+//___________________________________________________________________________
 //  Write a function called "addToBack".
 
 // Given an array and an element, "addToBack" returns 
@@ -645,4 +645,12 @@ function addToFront(arr, element) {
 function addToBack(arr, element) {
   arr.push(element)
   return arr;
+}
+//___________________________________________________________________________
+//  Write a function called "computeAreaOfARectangle".
+
+// Given the length and width of a rectangle, "computeAreaOfARectangle" returns its area.
+function computeAreaOfARectangle(length, width) {
+
+  return length * width;
 }
