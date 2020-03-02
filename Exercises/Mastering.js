@@ -654,3 +654,12 @@ function computeAreaOfARectangle(length, width) {
 
   return length * width;
 }
+//___________________________________________________________________________
+// Write a function called "computePerimeterOfARectangle".
+
+// Given a length and a width describing a rectangle,
+//  "computePerimeterOfARectangle" returns its perimter.
+function computePerimeterOfARectangle(length, width) {
+  let temp = (length + width)*2;
+  return temp;
+}
