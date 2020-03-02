@@ -663,3 +663,12 @@ function computePerimeterOfARectangle(length, width) {
   let temp = (length + width)*2;
   return temp;
 }
+//___________________________________________________________________________
+// Write a function called "computePerimeterOfATriangle".
+// Given 3 sides describing a triangle,
+// "computePerimeterOfATriangle" returns its perimter.
+
+function computePerimeterOfATriangle(side1, side2, side3) {
+    let temp = side1+side2+side3;
+    return temp;
+}
