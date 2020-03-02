@@ -672,3 +672,12 @@ function computePerimeterOfATriangle(side1, side2, side3) {
     let temp = side1+side2+side3;
     return temp;
 }
+//___________________________________________________________________________
+// Write a function called "computePerimeterOfACircle".
+
+// Given the radius of a circle, "computePerimeterOfACircle" returns its perimeter.
+
+function computePerimeterOfACircle(radius) {
+  let temp = 2*Math.PI*radius;
+  return temp;
+}
