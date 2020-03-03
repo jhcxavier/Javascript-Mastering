@@ -691,3 +691,11 @@ function computeSquareRoot(num) {
 }
 computeSquareRoot(9)
 //___________________________________________________________________________
+// Write a function called "doubleSquareRootOf".
+
+// Given a number, "doubleSquareRootOf" returns double its square root.
+function doubleSquareRootOf(num) {
+  // your code here 
+  return Math.sqrt(num)*2;
+}
+doubleSquareRootOf(9)
