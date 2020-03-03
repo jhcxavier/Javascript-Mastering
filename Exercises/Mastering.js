@@ -681,3 +681,13 @@ function computePerimeterOfACircle(radius) {
   let temp = 2*Math.PI*radius;
   return temp;
 }
+//___________________________________________________________________________
+// Write a function called "computeSquareRoot".
+
+// Given a number, "computeSquareRoot" returns its square root.
+function computeSquareRoot(num) {
+  // your code here
+ return Math.sqrt(num);
+}
+computeSquareRoot(9)
+//___________________________________________________________________________
