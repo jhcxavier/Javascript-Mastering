@@ -651,8 +651,8 @@ function addToBack(arr, element) {
 
 // Given the length and width of a rectangle, "computeAreaOfARectangle" returns its area.
 function computeAreaOfARectangle(length, width) {
-
-  return length * width;
+    let temp = length * width;
+  return temp;
 }
 //___________________________________________________________________________
 // Write a function called "computePerimeterOfARectangle".
