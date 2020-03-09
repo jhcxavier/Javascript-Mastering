@@ -377,8 +377,8 @@ console.log(isEvenAndGreaterThanTen(13))
 // var output = average(4, 6);
 // console.log(output); // --> 5
 function average(num1, num2) {
-
-    return (num1 + num2) / 2;
+    let temp = (num1 + num2) / 2 
+    return temp;
 }
 console.log(average(5, 2))
 
