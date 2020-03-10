@@ -719,8 +719,8 @@ console.log(getLengthOfThreeWords());
 
 // You should be familiar with the "concat" method for this problem. 
 function joinArrays(arr1, arr2) {
-    
-    return arr1.concat(arr2)
+    let temp = arr1.concat(arr2);
+    return temp;
 
 }
 console.log(joinArrays())
