@@ -100,8 +100,8 @@ console.log(getFullName('Joe', 'Smith'))
 // console.log(output); // --> 4
 
 function getLengthOfWord(word) {
-
-    return word.length;
+    temp =  word.length;
+    return temp;
 }
 console.log(getLengthOfWord('some'))
 
