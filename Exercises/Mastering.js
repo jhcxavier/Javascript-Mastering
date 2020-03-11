@@ -390,8 +390,8 @@ console.log(average(5, 2))
 // var output = computeAreaOfATriangle(4, 6);
 // console.log(output); // --> 12
 function computeAreaOfATriangle(base, height) {
-
-    return (base * height) / 2
+    let temp = (base * height) / 2;
+    return temp;
 }
 console.log(computeAreaOfATriangle(4, 6))
 
