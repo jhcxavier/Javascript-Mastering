@@ -87,8 +87,8 @@ console.log(checkAge('Adrian', '22'))
 // console.log(output); // --> 'Joe Smith'
 
 function getFullName(firstName, lastName) {
-
-    return firstName + ' ' + lastName;
+    let fullName = firstName + ' ' + lastName
+    return fullName;
 }
 console.log(getFullName('Joe', 'Smith'))
 //===========================================================
