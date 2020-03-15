@@ -404,7 +404,8 @@ console.log(computeAreaOfATriangle(4, 6))
 // console.log(output); // --> 27
 
 function cube(num) {
-    return num * num * num;
+    let temp = num * num * num;
+    return temp;
 }
 console.log(cube(3))
 //------------------------------------------________----------------
