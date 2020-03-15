@@ -417,7 +417,8 @@ console.log(cube(3))
 // console.log(output); // --> 25
 function square(num) {
     // your code here
-    return num * num;
+    let temp = num * num;
+    return temp;
 }
 console.log(square(5))
 //_________________________________________________
