@@ -739,3 +739,17 @@ function getElementsAfter(array, n) {
 
 }
 getElementsAfter(arr, 2);
+//___________________________________________________________________________
+//  Write a function called "getElementsUpTo".
+
+// Given an array and a index, "getElementsUpTo", 
+// returns an array with all the elements up until, but not including, the element at the given index.
+
+// Notes:* In order to do this you should be familiar with the 'splice' method.
+
+let arr = [1,2,3,4,5,6]
+
+function getElementsUpTo(array, n) {
+    return array.slice(0, n) 
+}
+getElementsUpTo(arr, 3)
