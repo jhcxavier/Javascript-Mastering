@@ -23,7 +23,6 @@ let carMixin = {
 }
 const carFactory = new CarFactory();
 
-
 const autoManufacturer = (type, model)=>{
     switch(type){
         case 'car':
