@@ -1,3 +1,5 @@
+// The singleton pattern makes sure that we don't have more than one instance of a particular class.
+
 let instance = null;
 
 class Car {
