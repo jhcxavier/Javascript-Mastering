@@ -753,3 +753,17 @@ function getElementsUpTo(array, n) {
     return array.slice(0, n) 
 }
 getElementsUpTo(arr, 3)
+//___________________________________________________________________________
+// Write a function called "getAllElementsButFirst".
+
+// Given an array, "getAllElementsButFirst" returns an array with all the elements but the first.
+
+// var input = [1, 2, 3, 4];
+// var output = getAllElementsButFirst(input);
+// console.log(output); // --> [2, 3, 4]
+
+// let arr = [1,2,3,4,5,6]
+function getAllElementsButFirst(array) {
+    array.shift();
+    return array; 
+  }
