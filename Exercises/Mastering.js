@@ -832,3 +832,22 @@ function removeFromFrontOfNew(arr) {
   return temp;
 }
 removeFromFrontOfNew(arr)
+//___________________________________________________________________________
+// Write a function called "countCharacter".
+
+// Given a string input and a character, "countCharacter" returns the number of occurences of a given character in the given string.
+
+// var output = countCharacter('I am a hacker', 'a');
+// console.log(output); // --> 3
+function countCharacter(str, char) {
+  let arr = str.split("");
+  console.log(arr)
+  let result = 0;
+  for (let i in arr){
+    if(arr[i] == char){
+      result ++;
+    }
+  }
+  return result;
+}
+countCharacter(str, char);
