@@ -863,7 +863,7 @@ function getAllLetters(str) {
   // your code here
  return  str.split("")
 }
-
+//___________________________________________________________________________
 // Write a function called "getAllWords".
 
 // Given a sentence, "getAllWords" returns an array containing every word in the sentence. 
@@ -880,3 +880,17 @@ function getAllWords(str) {
  return str.split(" ")
 }
 getAllWords(str)
+//___________________________________________________________________________
+// Write a function called "removeFromBack".
+
+// Given an array, "removeFromBack" returns the given array with its last element removed.
+
+// Notes:* You should be familiar with the method 'pop'.
+
+// var output = removeFromBack([1, 2, 3]);
+// console.log(output); // --> [1, 2]
+function removeFromBack(arr) {
+  // your code here
+  arr.pop()
+  return arr;
+}
