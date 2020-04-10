@@ -936,5 +936,46 @@ function isEitherEvenAndLessThan9(num1, num2) {
     return false;
 }
 console.log(isEitherEvenAndLessThan9(8, 9))
+//___________________________________________________________________________
+// Write a function called "extend".
 
+// Given two objects, "extend" adds properties from the 2nd object to the 1st object.
 
+// Notes:
+// * Add any keys that are not in the 1st object.
+// * If the 1st object already has a given key, ignore it (do not overwrite the property value).
+// * Do not modify the 2nd object at all.
+
+// var obj1 = {
+//   a: 1,
+//   b: 2
+// };
+// var obj2 = {
+//   b: 4,
+//   c: 3
+// };
+// extend(obj1, obj2);
+// console.log(obj1); // --> {a: 1, b: 2, c: 3}
+// console.log(obj2); // --> {b: 4, c: 3}
+var obj1 = {
+  a: 1,
+  b: 2
+};
+var obj2 = {
+  b: 4,
+  c: 3,
+  d: 5
+};
+
+function extend(obj1, obj2) {
+  for (let [key, value] of Object.entries(obj1)){
+    for (let [chave, valor] of Object.entries(obj2)){
+        if(key == chave){
+          delete obj2[chave]
+        }
+      }
+    }
+  let result = Object.assign(obj1, obj2)
+  return result;
+}
+console.log(extend(obj1, obj2))
