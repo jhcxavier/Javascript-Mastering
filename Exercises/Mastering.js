@@ -1031,3 +1031,33 @@ function removeNumbersLessThan(num, obj) {
   })
   return obj
 }
+
+//-----------------------------------------------
+// Write a function called "removeStringValuesLongerThan".
+
+// Given an number and an object, "removeStringValuesLongerThan" 
+// removes any properties on the given object whose values are strings longer than the given number.
+
+// var obj = {
+//   name: 'Montana',
+//   age: 20,
+//   location: 'Texas'
+// };
+// removeStringValuesLongerThan(6, obj);
+// console.log(obj); // { age: 20, location: 'Texas' }
+function removeStringValuesLongerThan(num, obj) {
+  // your code here
+// console.log(obj.name.length)
+  for(let [key, value] of Object.entries(obj)){
+    let str = value.length
+    if(str > num){
+      delete obj[key]
+    }
+  }
+  return obj;
+}
+removeStringValuesLongerThan(6, {
+  name: 'Montana',
+  age: 20,
+  location: 'Texas'
+})
