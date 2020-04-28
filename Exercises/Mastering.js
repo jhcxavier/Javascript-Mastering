@@ -1061,3 +1061,26 @@ removeStringValuesLongerThan(6, {
   age: 20,
   location: 'Texas'
 })
+//-----------------------------------------------
+// Write a function called "removeEvenValues".
+
+// Given any object, "removeEvenValues" removes any properties whose values are even numbers.
+
+// Do this in place and return the original object, do not construct a cloned object that omits the properties.
+
+// var obj = {
+//   a: 2,
+//   b: 3,
+//   c: 4
+// };
+// removeEvenValues(obj);
+// console.log(obj); // --> { b: 3 }
+function removeEvenValues(obj) {
+  // your code here
+  for(let [key, value] of Object.entries(obj)){
+    if(value%2 == 0){
+      delete obj[key]
+    }
+  }
+  return obj;
+}
