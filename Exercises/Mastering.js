@@ -1108,3 +1108,31 @@ countNumberOfKeys({
   b: 2,
   c: 3
 })
+//-----------------------------------------------
+// Write a function called "removeOddValues".
+
+// Given an object, "removeOddValues" removes any properties whose valuse are odd numbers.
+
+// var obj = {
+//   a: 2,
+//   b: 3,
+//   c: 4
+// };
+// removeOddValues(obj);
+// console.log(obj); // --> { a: 2, c: 4 }
+var obj = {
+  a: 2,
+  b: 3,
+  c: 4
+};
+function removeOddValues(obj) {
+  // your code here
+  
+  let result={};
+  for(let [key, value] of Object.entries(obj)){
+    if(value %2 !== 0)
+      delete obj[key]
+  }
+  return obj
+}
+removeOddValues(obj)
