@@ -1164,3 +1164,40 @@ removeArrayValues({
   b: 2,
   c: ['hi', 'there']
 })
+
+//------------------------------------------
+// Write a function called "removeNumberValues".
+
+// Given an object, "removeNumberValues" removes any properties whose valuse are numbers.
+
+// var obj = {
+//   a: 2,
+//   b: 'remaining',
+//   c: 4
+// };
+// removeNumberValues(obj);
+// console.log(obj); // --> { b: 'remaining' }
+function removeNumberValues(obj) {
+  // your code here
+  let result={}
+  // Object.entries(obj).forEach(([key, value])=>{
+  //   if(value.length > 2){
+  //     result.key=value
+  //   }
+  //   // console.log(typeof value)
+  // })
+  for (let [key, value] of Object.entries(obj)){
+    if(value % 2 == 0){
+      delete obj[key]
+    }else if(value % 2 ==1){
+      delete obj[key]
+    }
+    
+  }
+  return obj;
+}
+removeNumberValues({
+  a: 3,
+  b: 'remaining',
+  c: 4
+})
