@@ -1201,3 +1201,36 @@ removeNumberValues({
   b: 'remaining',
   c: 4
 })
+//------------------------------------------
+// Given an array names please create a function filters the list with only the names that contain the given string.
+
+// 1. Create a function called filteringList that take two values one is the array and second one is the filter desire.
+
+// 2. The search should NOT be Case Sensitive.
+
+
+// Hints:
+
+//  // Use any of the built in methods
+
+//  array.push();
+//  array.filter();
+//  string.includes();
+//  string.toLowerCase();
+let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan','Sophia','Benjamin','Mia','Mason','Charlotte','Elijah','Amelia','Oliver','Evelyn','Jacob','Abigail','Lucas','Harper','Michael','Emily','Alexander','Elizabeth','Ethan','Avery','Daniel','Sofia','Matthew','Ella','Aiden','Madison','Henry','Scarlett','Joseph','Victoria','Jackson','Aria','Samuel','Grace','Sebastian','Chloe','David','Camila','Carter','Penelope','Wyatt','Riley'];
+
+function filterByName(array, am){
+   let arr = [];
+  for(let i=0; i<array.length; i++){
+    
+    
+    if(array[i].indexOf(am)>=0 || array[i].indexOf("Am")>=0 ){
+      arr.push(array[i])
+    }
+  }
+   return arr;
+  
+  
+}
+
+console.log(filterByName(names, 'am'));
