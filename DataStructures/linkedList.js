@@ -35,11 +35,37 @@ LinkedList.prototype.addToTail = function(value){
 }
 let ll = new LinkedList()
 
-// ll.addToHead(100)
-// ll.addToHead(200)
-// ll.addToHead(300)
-ll.addToTail(1)
-ll.addToTail(2)
-ll.addToTail(3)
-ll.addToHead(100)
-console.log(ll.tail.previous.previous.previous)
+LinkedList.prototype.removeHead = function(){
+    // if the link list is empty
+    if(!this.head){
+        return null
+    }
+    let val = this.head.value
+    this.head = this.head.next
+    if(this.head){
+        this.head.previous = null;
+    }else{
+        this.tail = null
+    }
+    return val;
+}
+LinkedList.prototype.removeTail = function(){
+    if(!this.tail){
+        return null
+    }
+    let val = this.tail.value
+    this.tail = this.tail.previous
+    if(this.tail){
+        this.tail.next = null
+    }else{
+        this.tail = null
+    }
+    return val
+}
+// ll.addToHead(3)
+// ll.addToTail(1)
+
+
+
+
+console.log(ll.removeHead())
