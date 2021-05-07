@@ -32,24 +32,43 @@ BST.prototype.contains = function(value){
     }
 }
 
-BST.prototype.depthFirstTraversal=function(iteratorFunc){
-    if(this.left)this.left.depthFirstTraversal(iteratorFunc);
-    iteratorFunc(this.value)
-    if(this.right)this.right.depthFirstTraversal(iteratorFunc);
+BST.prototype.depthFirstTraversal=function(iteratorFunc, order){
+    if(order === "pre-order") iteratorFunc(this.value)
+    if(this.left)this.left.depthFirstTraversal(iteratorFunc, order);
+    if(order === "in-order") iteratorFunc(this.value)
+    if(this.right)this.right.depthFirstTraversal(iteratorFunc, order);
+    if(order === "post-order")iteratorFunc(this.value)
+}
+
+BST.prototype.breadthFirstTraversal = function(iteratorFunc) {
+    let queue = [this];
+
+    while(queue.length){
+        let treeNode = queue.shift()
+        iteratorFunc(treeNode);
+        if(treeNode.left) queue.push(treeNode.left)
+        if(treeNode.right) queue.push(treeNode.right)
+    }
 }
 
 const bst = new BST(50);
 bst.insert(30)
-bst.insert(25)
-bst.insert(57)
-bst.insert(1)
-bst.insert(9)
-bst.insert(72)
-bst.insert(63)
-bst.insert(110)
+bst.insert(70)
+bst.insert(100)
+bst.insert(60)
+bst.insert(59)
+bst.insert(20)
+bst.insert(45)
+bst.insert(35)
+bst.insert(85)
 bst.insert(105)
-console.log(bst.depthFirstTraversal(log))
+bst.insert(10)
 
-function log(value){
-    console.log(value)
+
+// console.log(bst.depthFirstTraversal(log, "pre-order"))
+
+function log(node){
+    console.log(node.value)
 }
+
+bst.breadthFirstTraversal(log)
