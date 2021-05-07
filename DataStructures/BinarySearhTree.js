@@ -51,6 +51,16 @@ BST.prototype.breadthFirstTraversal = function(iteratorFunc) {
     }
 }
 
+BST.prototype.getMin=function(iteratorFunc){
+    if(this.left) return this.left.getMin()
+    else return this.value; 
+}
+
+BST.prototype.getMax=function(){
+   if(this.right) return this.right.getMax()
+   else return this.value
+}
+
 const bst = new BST(50);
 bst.insert(30)
 bst.insert(70)
@@ -71,4 +81,4 @@ function log(node){
     console.log(node.value)
 }
 
-bst.breadthFirstTraversal(log)
+console.log(bst.getMin())
