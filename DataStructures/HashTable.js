@@ -52,12 +52,25 @@ HashTable.prototype.getMethod=function(key){
         return null
     }
 }
+
+HashTable.prototype.retrieveAll = function(){
+    let result= []
+    for(let i = 0; i < this.numBuckets; i++){
+        let currentNode = this.buckets[i]
+        while(currentNode){
+            result = [...result, currentNode]
+            currentNode = currentNode.next
+        }
+    }
+    return result;
+
+}
 let myHT = new HashTable(30)
 
 myHT.insert("Dean", "dean@gmail.com")
 myHT.insert("Joe", "joe@gmail.com")
 myHT.insert("Smith", "smith@gmail.com")
-console.log(myHT.buckets)
+// console.log(myHT.buckets)
 myHT.insert("Smith", "smith111@gmail.com")
 myHT.insert("Joe", "joe1@aol.com")
-console.log(myHT.getMethod("Joe"))
+console.log(myHT.retrieveAll())
